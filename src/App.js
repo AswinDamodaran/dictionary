@@ -34,7 +34,7 @@ function App() {
       <h1>Dictionary App</h1>
       <input type="text" onChange={(e) => setInputData(e.target.value)} />
       <button onClick={handleClick}>Search</button>
-      <h4>Definition:</h4>
+      <h4>Definition: </h4>
       <p>{meaning}</p>
     </div>
   );
