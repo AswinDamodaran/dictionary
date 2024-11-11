@@ -18,14 +18,14 @@ function App() {
 
   const handleClick = () => {
     if (inputData) {
-      const findWord = data.find((item) => item.word === inputData);
+      const findWord = data.find((item) => item.word.toLowerCase() === inputData.toLowerCase());
       if (findWord) {
         setMeaning(findWord.meaning);
       } else {
-        setMeaning("Word not found in the dictionary.”");
+        setMeaning("Word not found in the dictionary.");
       }
     } else {
-      setMeaning("Word not found in the dictionary.”");
+      setMeaning("Word not found in the dictionary.");
     }
   };
 
